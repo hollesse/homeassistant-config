@@ -62,6 +62,15 @@ sensor:
 tts:
   - platform: google
 
+# Homematic
+homematic:
+  interfaces:
+    wired:
+      host: !secret homematic_host
+      resolvenames: json
+      username: !secret homematic_username
+      password: !secret homematic_password
+
 # Cloud
 cloud:
 
