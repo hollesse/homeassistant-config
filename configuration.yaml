@@ -71,6 +71,9 @@ homematic:
       username: !secret homematic_username
       password: !secret homematic_password
 
+# Apple HomeKit
+homekit:
+
 # Cloud
 cloud:
 
