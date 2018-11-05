@@ -1,1 +1,10 @@
-[]
+[
+  - alias: 'Start HomeKit two minutes after start of Home Assistant'
+    trigger: 
+      platform: homeassistant
+      event: start
+    action: 
+      - delay: 0:02
+      - service: homekit.start
+
+]
