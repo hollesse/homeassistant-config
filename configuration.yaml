@@ -73,6 +73,7 @@ homematic:
 
 # Apple HomeKit
 homekit:
+  auto-start: false
 
 # Cloud
 cloud:
