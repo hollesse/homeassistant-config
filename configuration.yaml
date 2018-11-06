@@ -78,6 +78,11 @@ homekit:
 # Cloud
 cloud:
 
+# Device Tracker
+device_tracker:
+  - platform: fritz
+    password: !secret fritzbox_password
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
