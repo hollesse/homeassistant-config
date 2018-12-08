@@ -16,21 +16,25 @@
   condition: []
   action:
   - alias: ''
-    data: {}
+    data:
+      entity_id: cover.rollladen_schlafzimmer
+    service: cover.close_cover
+  - data:
+      entity_id: cover.rolladen_balkon_schlafzimmer
     service: cover.close_cover
 - id: '1543319953830'
   alias: Rollläden wochentags um 05:30 Uhr öffnen
   trigger:
-  - at: 05:30:00
+  - at: 07:00:00
     platform: time
   condition:
   - condition: time
     weekday:
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
   action:
   - service: cover.open_cover
 - id: '1543319953831'
@@ -41,7 +45,7 @@
   condition:
   - condition: time
     weekday:
-      - sat
-      - sun 
+    - sat
+    - sun
   action:
   - service: cover.open_cover
